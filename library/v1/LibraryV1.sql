@@ -15,7 +15,5 @@ create table book(
     book_published DATE not null,
     book_writer VARCHAR2(30) not null,
     book_publisher VARCHAR(30) not null,
-    lib_id VARCHAR2(20) not null, /*외래키 지정*/
-    CONSTRAINT fk_lib_id foreign key(lib_id) references library(lib_id)
 );
 
